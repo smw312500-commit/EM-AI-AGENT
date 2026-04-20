@@ -1,0 +1,8 @@
+node_modules
+server/node_modules
+dist
+.env
+server/.env
+__pycache__/
+*.pyc
+person_detection_flask/.venv/
