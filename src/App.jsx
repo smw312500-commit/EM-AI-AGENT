@@ -1,4 +1,4 @@
-﻿import React, { useEffect, useMemo, useRef, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import {
   ClipboardList,
   Cpu,
@@ -3916,7 +3916,7 @@ export default function App() {
                         <div className={`rounded-xl border p-3 ${hasShortage ? "border-red-500/30 bg-red-500/5" : "border-slate-800 bg-slate-900/70"}`}>
                           <div className="flex items-center gap-1.5">
                             {hasShortage && <div className="h-1.5 w-1.5 animate-pulse rounded-full bg-red-500" />}
-                            <div className="text-[8px] text-slate-500">부족한 재고</div>
+                            <div className={`text-[8px] ${hasShortage ? "text-red-500" : "text-slate-500"}`}>부족한 재고</div>
                           </div>
                           {hasShortage ? (
                             <div className="mt-1.5 space-y-1">
